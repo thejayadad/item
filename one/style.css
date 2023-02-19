@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: monospace;
+    color: white;
+    background: black;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+button{
+    padding: 8px;
+    background: lightskyblue;
+    outline: none;
+    border-radius: 7px;
+}
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+button[type="submit"]{
+    opacity: 0;
+    transition: .3s;
+}
+input:not(:placeholder-shown) + button[type="submit"]{
+    opacity: 1;
+}
